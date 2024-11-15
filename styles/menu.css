@@ -1,0 +1,81 @@
+main {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    border: 3px solid #865d36;
+    margin: auto;
+    margin-block-end: 3em;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 3px solid #865d36;
+    width: 12em;
+}
+
+tr:nth-last-of-type(odd) {
+    background-color: #a69080;
+}
+
+
+
+
+@media all and (min-width:768px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+
+
+    }
+
+
+    .cafe {
+        grid-column: 1 / 2;
+    }
+
+    .cocktail {
+        grid-column: 2 / 3;
+    }
+
+    .beer {
+        grid-column: 3 / 4;
+    }
+
+
+    #experimentalTable {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+
+    .whisper {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .fizz {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .mirage {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .whisper,
+    .fizz,
+    .mirage {
+        margin: 5px 20px;
+    }
+}

@@ -1,0 +1,121 @@
+/* colours  
+    #865d36;
+    #a69080;
+    #93785b;
+    #ac8968;
+    #3e362e;
+    */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #332c26;
+    list-style-type: none;
+}
+
+body {
+    background-color: #ac8968;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+div img {
+    width: 100%;
+    max-width: 20em;
+    height: auto;
+    border-radius: 30%;
+    margin-block-start: 2.5em;
+}
+
+#topBanner {
+    text-align: center;
+    max-width: 960px;
+    margin:0 auto;
+    padding:10px 10px 10px 0;
+}
+
+.accentBorder {
+    border: 10px#865d36 double;
+    min-width: fit-content;
+}
+
+#topBanner li{
+    font-size: 1.5em;
+    margin: 3px;
+    padding: 5px;
+    display: inline;
+}
+
+#topBanner h1 {
+    font-size: 3em;
+}
+
+.border {
+    text-align: center;
+    border-bottom: 5px #865d36 solid;
+}
+
+.footerNav {
+    text-align: center;
+    border-block-start: dashed 3px #865d36;
+}
+
+.footerNav ul {
+    width: 100%;
+    text-align: center;
+}
+
+.footerNav li {
+    margin-block: 5px;
+    margin-inline-end: 2.5em;
+}
+
+.contact {
+    margin-top: 16px;
+}
+
+.contact a {
+    font-size: 16px;
+}
+
+.reference {
+    font-size: 13px;
+    margin-top: 2em;
+}
+
+.contact a:hover,
+.reference a:hover {
+    font-style: italic;
+}
+
+@media all and (min-width:768px) {
+
+    .accentBorder {
+        margin: 2em;
+    }
+
+    .special {
+        border: 10px#865d36 double;
+        min-width: fit-content;
+        margin-block: 2em;
+        background-color: #ac8968;
+        margin: 2em;
+    }
+
+    #topBanner h1 {
+        font-size: 5em;
+    }
+
+    div img {
+        float: left;
+        width: 12em;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+
+    nav a:hover {
+        font-style: italic;
+        font-weight: bold;
+    }
+}
