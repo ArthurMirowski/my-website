@@ -3,13 +3,13 @@ p {
     margin-inline: 1em;
 }
 
-section {
+main div {
     margin-block: 10px;
     text-align: center;
     background-color: antiquewhite;
 }
 
-section img {
+main div img {
     width: 92%;
     height: auto;
     border: solid rgba(134, 93, 54, 0.7) 8px;
@@ -22,6 +22,8 @@ section img {
     border: 10px#865d36 double;
     min-width: fit-content;
     margin-block: 10px;
+    text-align: center;
+    background-color: antiquewhite;
 
     h2 {
         font-style: italic;
