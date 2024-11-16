@@ -9,6 +9,7 @@ main {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: antiquewhite;
 }
 
 section li {
@@ -42,6 +43,10 @@ tr:nth-last-of-type(odd) {
 }
 
 @media all and (min-width:768px) {
+
+    main {
+        background-color: #865d36;
+    }
 
     .accentBorder {
         background-color: #93785b;

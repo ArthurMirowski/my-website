@@ -2,6 +2,7 @@ main {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: antiquewhite;
 }
 
 h2 {
@@ -23,6 +24,10 @@ th {
 
 tr:nth-last-of-type(odd) {
     background-color: #a69080;
+}
+
+tr:nth-last-of-type(even) {
+    color: #a69080;
 }
 
 

@@ -6,6 +6,7 @@ p {
 section {
     margin-block: 10px;
     text-align: center;
+    background-color: antiquewhite;
 }
 
 section img {
@@ -18,13 +19,17 @@ section img {
 }
 
 .welcome {
+    border: 10px#865d36 double;
+    min-width: fit-content;
+    margin-block: 10px;
+
     h2 {
         font-style: italic;
     }
 
     p {
         margin-inline: 50px;
-}
+    }
 }
 
 
