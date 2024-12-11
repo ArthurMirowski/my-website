@@ -19,7 +19,7 @@ table {
 td,
 th {
     border: 3px solid #865d36;
-    width: 12em;
+    inline-size: 12em;
 }
 
 tr:nth-last-of-type(odd) {

@@ -34,7 +34,7 @@ table {
 td,
 th {
     border: 3px solid #865d36;
-    width: 22em;
+    inline-size: 22em;
     text-align: center;
 }
 
