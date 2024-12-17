@@ -1,20 +1,19 @@
-/* colours  
-    #865d36;
-    #a69080;
-    #93785b;
-    #ac8968;
-    #3e362e;
-    */
 main {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: var(--backgroundColorDiv);
+    margin-block: var(--marginDiv);
 }
 
 section li {
     margin: 10px auto;
     text-decoration: underline;
+}
+
+main ul {
+    list-style-type: none;
+    margin-inline-start: -35px;
 }
 
 h2,
@@ -34,7 +33,7 @@ table {
 td,
 th {
     border: 3px solid #865d36;
-    width: 22em;
+    inline-size: 22em;
     text-align: center;
 }
 
@@ -50,6 +49,22 @@ tr:nth-last-of-type(odd) {
 
     .accentBorder {
         background-color: #93785b;
-        ;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    tr:nth-last-of-type(odd) {
+        background-color: #4A3D2F;
+    }
+
+    @media all and (min-width:768px) {
+
+        main {
+            background-color: #4A3D2F;
+        }
+
+        .accentBorder {
+            background-color: #4A3D2F;
+        }
     }
 }

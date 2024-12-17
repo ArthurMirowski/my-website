@@ -1,0 +1,45 @@
+main {
+    text-align: center;
+}
+
+p span {
+    font-weight: bold;
+}
+
+article {
+    margin: 10px;
+}
+
+section,
+main>div {
+    margin-block-start: 10px;
+}
+
+p {
+    margin: 15px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    max-inline-size: 33rem;
+    block-size: auto;
+    inline-size: 100%;
+    border: #865d36 double 10px;
+    margin: 0px auto;
+    margin-block-start: 8px;
+}
+
+.accentBorder {
+    background-color: var(--backgroundColorDiv);
+}
+
+@media all and (min-width:768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

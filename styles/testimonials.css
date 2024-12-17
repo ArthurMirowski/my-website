@@ -1,0 +1,25 @@
+main {
+    text-align: center;
+}
+
+.quotes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--backgroundColorDiv);
+}
+
+p {
+    max-inline-size: 22.5em;
+}
+
+div {
+    margin: 1em;
+}
+
+video {
+    inline-size: 75%;
+    block-size: auto;
+    margin: 1em;
+}

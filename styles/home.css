@@ -6,12 +6,12 @@ p {
 main div {
     margin-block: 10px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: var(--backgroundColorDiv);
 }
 
 main div img {
-    width: 92%;
-    height: auto;
+    inline-size: 92%;
+    block-size: auto;
     border: solid rgba(134, 93, 54, 0.7) 8px;
     margin-block: 10px;
     margin: 0px auto;
@@ -19,11 +19,11 @@ main div img {
 }
 
 .welcome {
-    border: 10px#865d36 double;
-    min-width: fit-content;
+    border: var(--border);
+    min-inline-size: fit-content;
     margin-block: 10px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: var(--backgroundColorDiv);
 
     h2 {
         font-style: italic;
@@ -53,10 +53,9 @@ main div img {
     .img1 {
         float: inline-start;
         margin-inline-start: 10px;
-        width: 35em;
-        height: auto;
+        inline-size: 35em;
+        block-size: auto;
         margin: 0px auto;
-
     }
 
     .art1 h3 {
@@ -66,13 +65,36 @@ main div img {
     .img2 {
         float: inline-end;
         margin-inline-end: 10px;
-        width: 35em;
-        height: auto;
+        inline-size: 35em;
+        block-size: auto;
         margin: 0px auto;
     }
 
     .art2 h3 {
         margin-block-start: 3.5em;
+    }
+
+    .img3 {
+        float: inline-start;
+        margin-inline-start: 10px;
+        inline-size: 35em;
+        block-size: auto;
+        margin: 0px auto;
+    }
+
+    .art3 h3 {
+        margin-block-start: 3.5em;
+    }
+
+    p a:hover {
+        font-weight: bold;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
     }
 
 }

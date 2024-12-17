@@ -1,0 +1,79 @@
+img:not(.border img) {
+    inline-size: 25%;
+    block-size: auto;
+    padding: 8px;
+    min-inline-size: 10em;
+}
+
+main div>div {
+    margin-block: 20px;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    margin: 10px;
+    padding: 15px;
+    padding-block-start: 0;
+}
+
+.box p,
+.box h2 {
+    vertical-align: middle;
+}
+
+.box {
+    background-color: var(--backgroundColorDiv);
+}
+
+@media all and (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "john john ."
+            ". remy remy"
+            "ma ma ."
+            ". pork pork";
+    }
+
+    .john {
+        grid-area: john;
+    }
+
+    .staffInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .john img {
+        float: inline-end;
+    }
+
+    .pork {
+        grid-area: pork;
+    }
+
+    .remy {
+        grid-area: remy;
+    }
+
+    .remy img {
+        float: inline-start;
+    }
+
+    .ma {
+        grid-area: ma;
+    }
+
+    .ma img {
+        float: inline-end;
+    }
+
+    .pork img {
+        float: inline-start;
+    }
+}

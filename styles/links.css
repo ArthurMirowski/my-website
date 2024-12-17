@@ -1,0 +1,70 @@
+main {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main div ul {
+    list-style-image: url(../images/beer\ \(2\).png);
+    list-style-position: outside;
+    margin: 0px 8px 16px 8px;
+}
+
+main div {
+    inline-size: min-content;
+    text-align: left;
+    border: var(--border);
+    margin: 10px;
+    inline-size: fit-content;
+
+}
+
+main div div {
+    background-color: var(--backgroundColorDiv);
+}
+
+main div {
+    background-color: #93785b;
+}
+
+main h3 {
+    text-align: center;
+}
+
+main a {
+    margin: 0px 8px 16px 8px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+main a:hover {
+    font-style: italic;
+}
+
+.footerNav {
+    margin-block-start: var(--marginDiv);
+}
+
+@media all and (min-width:768px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    main div ul {
+        min-inline-size: 19em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    main div {
+        background-color: #4A3D2F;
+    }
+}

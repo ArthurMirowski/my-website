@@ -1,18 +1,33 @@
-/* colours  
-    #865d36;
-    #a69080;
-    #93785b;
-    #ac8968;
-    #3e362e;
-    */
+main {
+    margin-block: var(--marginDiv);
+}
+
 .contactUs {
     text-align: center;
     border: 4px#865d36 solid;
-    min-width: fit-content;
-    margin-block: 2em;
-    background-color: #ac8968;
-    margin: 2em;
-    background-color: antiquewhite;
+    min-inline-size: fit-content;
+    margin-block: var(--marginDiv);
+    margin: var(--marginDiv);
+    background-color: var(--backgroundColorDiv);
+}
+
+div .accentBorder {
+    justify-self: center;
+}
+
+fieldset {
+    border: 3px#865d36 solid;
+    border-radius: 4px;
+    background-color: white;
+    padding: 10px;
+    margin: 7px;
+
+}
+
+fieldset div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactUs a {
@@ -20,7 +35,7 @@
 }
 
 .contactForm {
-    max-width: 1000px;
+    max-inline-size: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -41,13 +56,13 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea {
-    width: 100%;
+    inline-size: 100%;
     padding: 10px;
     font-size: 1em;
     border: 3px#865d36 solid;
     border-radius: 4px;
-    box-sizing: border-box;
     background-color: #fff;
 }
 
@@ -60,9 +75,89 @@ button[type="submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 9px #B68A42;
+    border-radius: 5px;
+    background-color: #2F2B26;
 }
 
 button[type="submit"]:hover {
     font-style: italic;
-    /* font-weight: bold; */
+    background-color: #2F2B26;
+}
+
+button:active {
+    background-color: #2F2B26;
+    box-shadow: 0 5px #B68A42;
+    transform: translateY(6px);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 10px;
+}
+
+form div .accentBorder {
+    padding: 1.5em 1em;
+    inline-size: 95%;
+    border: #865d36 solid 3px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.row {
+    text-align: center;
+    background-color: var(--backgroundColorDiv);
+    align-items: center;
+    justify-content: center;
+    inline-size: 100%;
+}
+
+@media all and (min-width:768px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    fieldset {
+        background-color: black;
+    }
+
+    form div .accentBorder {
+        background-color: black;
+    }
+
+    select {
+        background-color: black;
+    }
+
+    select option {
+        background-color: black;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        background-color: var(--backgroundColorDiv);
+    }
+
+    button[type="submit"] {
+        box-shadow: 0 9px #999;
+        background-color: #a69080;
+    }
+
+    button:active {
+        background-color: #a69080;
+        box-shadow: 0 5px #666;
+        transform: translateY(6px);
+    }
+
+    button[type="submit"]:hover {
+        font-style: italic;
+        background-color: #a69080;
+    }
+
 }
