@@ -10,6 +10,9 @@ main {
     margin: var(--marginDiv);
     background-color: var(--backgroundColorDiv);
 }
+header nav{
+    text-align: center;
+}
 
 div .accentBorder {
     justify-self: center;
