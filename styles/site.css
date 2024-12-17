@@ -23,6 +23,12 @@ body {
 
 }
 
+.navFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 header nav a {
     padding: 5px;
     text-decoration: none;
@@ -50,7 +56,6 @@ header img {
 }
 
 header nav ul {
-    text-align: center;
     list-style-type: none;
 }
 
